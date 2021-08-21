@@ -1,0 +1,76 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:rgb(153, 102, 110);
+}
+body{
+    background-color: var(--primary-color);
+}
+h1{
+    text-align: center;
+    margin:2rem;
+}
+#container{
+    width:60%;
+    height:50%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+label, input{
+    font-weight:bold;
+
+    width:60%;
+    margin:auto;
+}
+input{
+    padding:0.2rem 0.5rem;
+    margin-bottom: 1rem;;
+}
+button{
+    width:120px;
+    margin:auto;
+    padding:0.4rem 0.5rem;
+    margin-bottom: 1rem;
+    border:none;
+    border-radius: 0.5rem;
+    cursor:pointer;
+}
+#message{
+    font-weight:bold;
+    font-size:1.2rem;
+    margin:auto;
+    margin-top:1rem;
+
+}
+
+/* footer */
+footer{
+    text-align: center;
+    border-top-right-radius: 1.5rem;
+    margin:1.5rem  0.3rem 0 0.3rem;
+}
+footer h2{
+    padding:1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+footer ul{
+    padding:1rem;
+}
+footer ul li{
+    display: inline;
+}
+footer ul li a{
+    text-decoration: none;
+    color:black;
+    margin:0rem 1rem;
+    font-weight: 400;
+    font-size:1.2rem;
+}
+footer ul li a:hover{
+    font-weight: bold;
+}
