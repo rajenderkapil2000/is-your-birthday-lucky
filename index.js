@@ -6,9 +6,9 @@ const message = document.querySelector("#message");
 
 function compareValues(sum, luckyNumber){
     if(sum % luckyNumber ===0){
-        message.innerText = "your birthhday is lucky"
+        message.innerText = "yay! your birthday is lucky"
     }else{
-        message.innerText = "your birthhday is not lucky"
+        message.innerText = "Oh! your birthday is not lucky"
     }
 }
 

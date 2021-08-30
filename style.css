@@ -1,76 +1,103 @@
-*{
-    margin:0px;
-    padding:0px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white-color);
+
 }
-:root{
-    --primary-color:rgb(153, 102, 110);
+
+:root {
+    --primary-color: rgb(16, 51, 45);
+    --white-color: white;
 }
-body{
+
+body {
     background-color: var(--primary-color);
 }
-h1{
+
+h1 {
     text-align: center;
-    margin:2rem;
+    margin: 2rem;
 }
-#container{
-    width:60%;
-    height:50%;
-    margin:auto;
+
+#container {
+    width: 100%;
+    margin: auto;
     display: flex;
     flex-direction: column;
+    margin-top:2.5rem;
 }
-label, input{
-    font-weight:bold;
 
-    width:60%;
-    margin:auto;
+label,
+input {
+    font-weight: bold;
+    width: 40%;
+    margin: auto;
 }
-input{
-    padding:0.2rem 0.5rem;
-    margin-bottom: 1rem;;
+
+input {
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 2rem;
+    color: black;
 }
-button{
-    width:120px;
-    margin:auto;
-    padding:0.4rem 0.5rem;
-    margin-bottom: 1rem;
-    border:none;
+
+button {
+    width: 120px;
+    margin: auto;
+    padding: 0.4rem 0.5rem;
+    margin-bottom: 2.5rem;
+    border: none;
     border-radius: 0.5rem;
-    cursor:pointer;
+    cursor: pointer;
+    color: black
 }
-#message{
-    font-weight:bold;
-    font-size:1.2rem;
-    margin:auto;
-    margin-top:1rem;
 
+#message {
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 1.5rem;
 }
 
 /* footer */
-footer{
+.container{
     text-align: center;
     border-top-right-radius: 1.5rem;
-    margin:1.5rem  0.3rem 0 0.3rem;
+    margin:5.5rem  0.3rem 0 0.3rem;  
 }
-footer h2{
-    padding:1rem;
+
+footer h2 {
+    padding: 1rem;
     font-weight: bold;
     font-size: 2rem;
 }
-footer ul{
-    padding:1rem;
+
+footer ul {
+    padding: 1rem;
 }
-footer ul li{
+footer ul li {
     display: inline;
 }
-footer ul li a{
+footer ul li a {
     text-decoration: none;
-    color:black;
-    margin:0rem 1rem;
+    margin: 0rem 1rem;
     font-weight: 400;
-    font-size:1.2rem;
+    font-size: 1.2rem;
 }
-footer ul li a:hover{
-    font-weight: bold;
+footer ul li a:hover {
+    color: rgb(21, 16, 71);
+}
+@media (max-width:450px){
+    #container {
+        margin-top:0rem;
+    }
+    label, input{
+        width:70%;
+}
+  .container{ 
+      top:2rem;
+  }
 }
