@@ -5,17 +5,11 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    color: var(--white-color);
+    color: white;
 
 }
-
-:root {
-    --primary-color: rgb(16, 51, 45);
-    --white-color: white;
-}
-
 body {
-    background-color: var(--primary-color);
+    background: linear-gradient(to right, #00aaff, #492e2e);
 }
 
 h1 {
